@@ -615,7 +615,7 @@ function PlanYourVisit() {
 
           <ul className="mt-8 space-y-4 text-[15px]">
             <li className="flex gap-3"><MapPin className="h-5 w-5 mt-0.5 text-[color:var(--brand)] shrink-0" /><span><strong>1234 Forward Way</strong><br />Mobile, AL 36608</span></li>
-            <li className="flex gap-3"><Clock className="h-5 w-5 mt-0.5 text-[color:var(--brand)] shrink-0" /><span><strong>Sundays</strong> · 9:00 AM & 11:00 AM</span></li>
+            <li className="flex gap-3"><Clock className="h-5 w-5 mt-0.5 text-[color:var(--brand)] shrink-0" /><span><strong>Sundays</strong> · 11:00 AM</span></li>
             <li className="flex gap-3"><Users className="h-5 w-5 mt-0.5 text-[color:var(--brand)] shrink-0" /><span>Free parking · greeters at every door · kids check-in opens 30 min early</span></li>
           </ul>
 
