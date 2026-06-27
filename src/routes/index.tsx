@@ -127,15 +127,6 @@ function Hero() {
       <div className="absolute inset-0 hero-overlay" />
 
       <div className="container-page relative z-10 flex h-full flex-col justify-center text-white">
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="inline-flex w-fit items-center gap-2 rounded-full bg-white/10 backdrop-blur px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-[color:var(--brand-accent)]"
-        >
-          <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--brand-accent)]" />
-          Welcome to Forward · Mobile, AL
-        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 18 }}
