@@ -33,7 +33,7 @@ function WatchPage() {
       <PageHero
         eyebrow="Watch"
         title={<>Sermons, <span style={{ color: "var(--brand-accent)" }}>live and on demand.</span></>}
-        description="Catch up on a message you missed or join us live every Sunday at 9 & 11 AM CT."
+        description="Catch up on a message you missed or join us live every Sunday at 11 AM CT."
       />
 
       <section className="section bg-white">
