@@ -106,9 +106,20 @@ function HomePage() {
 /* ------------------------------- HERO ------------------------------- */
 
 function Hero() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((i) => (i === 0 ? 1 : 0));
+    }, 8000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const videos = [heroVideo1.url, heroVideo2.url];
+
   return (
     <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
-      {/* Background — image fallback under a video layer. Replace with mp4 URL. */}
+      {/* Poster fallback — visible while videos load */}
       <img
         src={heroImage}
         alt="Forward Church worship service"
@@ -117,15 +128,24 @@ function Hero() {
         width={1920}
         height={1280}
       />
-      {/* Optional video: uncomment and supply src
-      <video
-        autoPlay loop muted playsInline preload="auto"
-        poster={heroImage}
-        className="absolute inset-0 h-full w-full object-cover"
-      >
-        <source src="YOUR_VIDEO_URL.mp4" type="video/mp4" />
-      </video>
-      */}
+
+      {/* Cycling video backgrounds with crossfade */}
+      {videos.map((src, i) => (
+        <video
+          key={src}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          poster={heroImage}
+          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out"
+          style={{ opacity: activeIndex === i ? 1 : 0 }}
+        >
+          <source src={src} type="video/mp4" />
+        </video>
+      ))}
+
       <div className="absolute inset-0 hero-overlay" />
 
       <div className="container-page relative z-10 flex h-full flex-col justify-center text-white">
