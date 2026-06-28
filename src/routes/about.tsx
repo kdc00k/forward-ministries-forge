@@ -32,7 +32,7 @@ function AboutPage() {
     <>
       <PageHero
         eyebrow="Our Story"
-        title={<>A church on the move <span style={{ color: "var(--brand-accent)" }}>in Mobile.</span></>}
+        title={<>A church moving <span style={{ color: "var(--brand-accent)" }}>forward{"\u00a0"}in Mobile.</span></>}
         description="Forward Church Ministries began with a simple conviction: that God is still doing new things, and His people are invited to move forward with Him."
       />
 
