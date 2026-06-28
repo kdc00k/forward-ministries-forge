@@ -210,7 +210,7 @@ function Welcome() {
             <p className="font-display font-extrabold text-[color:var(--brand-dark)] text-lg leading-tight">
               "You're welcome here — exactly as you are."
             </p>
-            <p className="mt-2 text-xs font-bold uppercase tracking-wider text-[color:var(--brand-dark)]/80">Pastor David Carter</p>
+            <p className="mt-2 text-xs font-bold uppercase tracking-wider text-[color:var(--brand-dark)]/80">Bishop Lavorgie Burage</p>
           </div>
         </Reveal>
 

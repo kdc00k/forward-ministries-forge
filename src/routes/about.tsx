@@ -40,7 +40,7 @@ function AboutPage() {
         <div className="container-page grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <Reveal>
             <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
-              <img src={pastorDavid.url} alt="Pastor David Carter" className="h-full w-full object-cover" loading="lazy" width={1280} height={1280} />
+              <img src={pastorDavid.url} alt="Bishop Lavorgie Burage" className="h-full w-full object-cover" loading="lazy" width={1280} height={1280} />
             </div>
           </Reveal>
           <div>
@@ -51,17 +51,17 @@ function AboutPage() {
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-4 text-4xl md:text-5xl font-display font-extrabold leading-[1.05] tracking-tight">
-                Meet Pastor David Carter
+                Meet Bishop Lavorgie Burage
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 text-[color:var(--muted-foreground)] text-lg leading-relaxed">
-                David has called Mobile home for nearly two decades. He and his wife Rachel planted Forward with a small team and a big vision — to build a church that helps people take their next step with Jesus, no matter where they're starting from.
+                Bishop Bio
               </p>
             </Reveal>
             <Reveal delay={0.15}>
               <p className="mt-4 text-[color:var(--muted-foreground)] leading-relaxed">
-                On any given Sunday you'll find David greeting first-time guests at the door, teaching the Bible in a way that's both honest and hopeful, and praying with people long after the service ends.
+                On any given Sunday you'll find Bishop greeting first-time guests at the door, teaching the Bible in a way that's both honest and hopeful, and praying with people long after the service ends.
               </p>
             </Reveal>
           </div>
