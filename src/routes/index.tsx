@@ -576,7 +576,6 @@ function NewsletterForm() {
       />
       <Button type="submit" className="h-12 rounded-full bg-[color:var(--brand)] hover:bg-[color:var(--brand-dark)] font-bold px-6">
         Subscribe
-        <Calendar className="ml-1 h-4 w-4 opacity-0 hidden" />
       </Button>
     </form>
   );
