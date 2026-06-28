@@ -204,7 +204,7 @@ function Welcome() {
       <div className="container-page grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <Reveal className="relative">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
-            <img src={welcomePastor} alt="Pastor of Forward Church" className="h-full w-full object-cover" loading="lazy" width={1280} height={1280} />
+            <img src={bishopWelcome.url} alt="Bishop Lavorgie Burage" className="h-full w-full object-cover" loading="lazy" width={1280} height={1280} />
           </div>
           <div className="absolute -bottom-6 -right-4 lg:-right-10 max-w-[260px] rounded-2xl bg-[color:var(--brand-accent)] p-5 shadow-xl">
             <p className="font-display font-extrabold text-[color:var(--brand-dark)] text-lg leading-tight">
@@ -732,7 +732,7 @@ function Giving() {
 const posts = [
   { tag: "Announcement", title: "Forward Conference 2026 is here", excerpt: "Three nights of worship, teaching, and prayer. Tickets open Monday.", img: sermonStage },
   { tag: "Story", title: "Hope on the East Side", excerpt: "How one small group started a back-to-school giveaway that served 400 families.", img: community },
-  { tag: "Blog", title: "5 ways to grow in your prayer life", excerpt: "Bishop shares practical rhythms anyone can begin this week.", img: welcomePastor },
+  { tag: "Blog", title: "5 ways to grow in your prayer life", excerpt: "Bishop shares practical rhythms anyone can begin this week.", img: bishopWelcome.url },
 ];
 
 function NewsUpdates() {
