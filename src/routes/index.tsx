@@ -274,7 +274,6 @@ function ServiceTimes() {
                   </div>
                   <h3 className="mt-5 text-xl font-display font-extrabold">{s.title}</h3>
                   <p className="mt-2 text-sm text-[color:var(--muted-foreground)] flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> {s.time}</p>
-                  <p className="mt-1 text-sm text-[color:var(--muted-foreground)] flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5" /> {s.location}</p>
                 </CardContent>
               </Card>
             </Reveal>
