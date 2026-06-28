@@ -8,7 +8,7 @@ import {
   Music,
   BookOpen,
   Baby,
-  Calendar,
+  
   Clock,
   MapPin,
   Users,
@@ -18,9 +18,6 @@ import {
   Mic2,
   Camera,
   Coffee,
-  Quote,
-  ChevronLeft,
-  ChevronRight,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -29,7 +26,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
-import { CountUp } from "@/components/site/CountUp";
+
 
 import heroImage from "@/assets/hero-worship.jpg";
 import heroVideo1 from "@/assets/hero-user-1.mp4.asset.json";
@@ -43,9 +40,6 @@ import youth from "@/assets/ministry-youth.jpg";
 import baptism from "@/assets/ministry-baptism.jpg";
 import outreach from "@/assets/ministry-outreach.jpg";
 import sermonStage from "@/assets/sermon-stage.jpg";
-import t1 from "@/assets/testimonial-1.jpg";
-import t2 from "@/assets/testimonial-2.jpg";
-import t3 from "@/assets/testimonial-3.jpg";
 import exterior from "@/assets/church-exterior.jpg";
 
 export const Route = createFileRoute("/")({
@@ -93,11 +87,7 @@ function HomePage() {
       <Welcome />
       <ServiceTimes />
       <WhyVisit />
-      
       <MinistriesGrid />
-      <UpcomingEvents />
-      <ImpactStats />
-      <Testimonials />
       <PlanYourVisit />
       <Giving />
       <NewsUpdates />
@@ -390,160 +380,6 @@ function MinistriesGrid() {
   );
 }
 
-/* ----------------------------- EVENTS ----------------------------- */
-
-const events = [
-  { date: { d: "12", m: "Jul" }, title: "Family Beach Baptism", desc: "Celebrate new life in Christ at the Mobile Bay shoreline.", img: baptism },
-  { date: { d: "20", m: "Jul" }, title: "Youth Summer Camp", desc: "5 days of worship, games, and life-change for 6th–12th grade.", img: youth },
-  { date: { d: "03", m: "Aug" }, title: "Community Outreach Day", desc: "Join 300+ volunteers serving neighborhoods across Mobile.", img: outreach },
-];
-
-function UpcomingEvents() {
-  return (
-    <section className="section bg-[color:var(--brand-soft)]">
-      <div className="container-page">
-        <SectionHeading eyebrow="What's Next" title="Upcoming events" description="Mark your calendar and bring a friend." />
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {events.map((ev, i) => (
-            <Reveal key={ev.title} delay={i * 0.07}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-cardHover)]">
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img src={ev.img} alt={ev.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" width={1280} height={800} />
-                  <div className="absolute top-4 left-4 rounded-xl bg-white px-3 py-2 text-center shadow-md">
-                    <p className="text-2xl font-display font-extrabold leading-none text-[color:var(--brand)]">{ev.date.d}</p>
-                    <p className="text-[10px] font-bold uppercase tracking-wider text-[color:var(--brand-dark)]">{ev.date.m}</p>
-                  </div>
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <h3 className="text-xl font-display font-extrabold">{ev.title}</h3>
-                  <p className="mt-2 text-sm text-[color:var(--muted-foreground)] flex-1">{ev.desc}</p>
-                  <Button asChild className="mt-5 self-start rounded-full bg-[color:var(--brand)] hover:bg-[color:var(--brand-dark)] font-bold">
-                    <Link to="/events">Register <ArrowRight className="ml-1 h-4 w-4" /></Link>
-                  </Button>
-                </div>
-              </article>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ----------------------------- IMPACT STATS ----------------------------- */
-
-const stats = [
-  { value: 2400, suffix: "+", label: "Families served" },
-  { value: 380, suffix: "+", label: "People baptized" },
-  { value: 650, suffix: "+", label: "Volunteers serving" },
-  { value: 18, suffix: "", label: "Years in Mobile" },
-];
-
-function ImpactStats() {
-  return (
-    <section className="relative section overflow-hidden bg-[color:var(--brand)] text-white">
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-30"
-        style={{ background: "radial-gradient(800px 400px at 0% 0%, rgba(185,225,30,0.45), transparent 60%)" }}
-      />
-      <div className="container-page relative">
-        <div className="text-center max-w-2xl mx-auto">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[color:var(--brand-accent)]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--brand-accent)]" /> Community Impact
-          </span>
-          <h2 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-display font-extrabold !text-white tracking-tight leading-[1.05]">
-            Forward in Mobile — together.
-          </h2>
-        </div>
-        <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((s, i) => (
-            <Reveal key={s.label} delay={i * 0.08}>
-              <div className="text-center">
-                <p className="font-display font-extrabold text-[clamp(2.5rem,6vw,4.5rem)] leading-none text-[color:var(--brand-accent)]">
-                  <CountUp end={s.value} suffix={s.suffix} />
-                </p>
-                <p className="mt-3 text-sm md:text-base font-semibold text-white/85 uppercase tracking-wider">{s.label}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ----------------------------- TESTIMONIALS ----------------------------- */
-
-const testimonials = [
-  { name: "Jasmine R.", quote: "Forward gave me a family when I had none in Mobile. The friendships here changed my life.", img: t1 },
-  { name: "Carlos M.", quote: "From visitor to volunteer in three months. This is the most welcoming church I've ever attended.", img: t2 },
-  { name: "Hannah B.", quote: "The teaching meets me where I am and pushes me forward. I leave every Sunday encouraged.", img: t3 },
-];
-
-function Testimonials() {
-  const [idx, setIdx] = useState(0);
-  useEffect(() => {
-    const id = setInterval(() => setIdx((n) => (n + 1) % testimonials.length), 6500);
-    return () => clearInterval(id);
-  }, []);
-  const t = testimonials[idx];
-
-  return (
-    <section className="section bg-white">
-      <div className="container-page">
-        <SectionHeading eyebrow="Stories" title="Real lives. Real change." />
-        <div className="mt-14 mx-auto max-w-3xl">
-          <motion.div
-            key={idx}
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="rounded-3xl bg-[color:var(--brand-soft)] p-8 md:p-12 text-center"
-          >
-            <Quote className="mx-auto h-9 w-9 text-[color:var(--brand)]/40" />
-            <p className="mt-5 font-display text-2xl md:text-3xl leading-snug !text-[color:var(--brand-dark)]">
-              "{t.quote}"
-            </p>
-            <div className="mt-8 flex flex-col items-center gap-3">
-              <img src={t.img} alt={t.name} className="h-16 w-16 rounded-full object-cover ring-4 ring-white shadow-md" loading="lazy" width={640} height={640} />
-              <p className="text-sm font-bold text-[color:var(--brand-dark)] uppercase tracking-wider">{t.name}</p>
-            </div>
-          </motion.div>
-          <div className="mt-6 flex items-center justify-center gap-3">
-            <button
-              aria-label="Previous testimonial"
-              onClick={() => setIdx((n) => (n - 1 + testimonials.length) % testimonials.length)}
-              className="h-10 w-10 grid place-items-center rounded-full border border-[color:var(--border)] hover:bg-[color:var(--brand-soft)]"
-            >
-              <ChevronLeft className="h-5 w-5 text-[color:var(--brand-dark)]" />
-            </button>
-            <div className="flex gap-2">
-              {testimonials.map((_, i) => (
-                <button
-                  key={i}
-                  aria-label={`Go to testimonial ${i + 1}`}
-                  onClick={() => setIdx(i)}
-                  className={[
-                    "h-2 rounded-full transition-all",
-                    i === idx ? "w-8 bg-[color:var(--brand)]" : "w-2 bg-[color:var(--brand)]/25",
-                  ].join(" ")}
-                />
-              ))}
-            </div>
-            <button
-              aria-label="Next testimonial"
-              onClick={() => setIdx((n) => (n + 1) % testimonials.length)}
-              className="h-10 w-10 grid place-items-center rounded-full border border-[color:var(--border)] hover:bg-[color:var(--brand-soft)]"
-            >
-              <ChevronRight className="h-5 w-5 text-[color:var(--brand-dark)]" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* --------------------------- PLAN YOUR VISIT --------------------------- */
 
@@ -740,7 +576,6 @@ function NewsletterForm() {
       />
       <Button type="submit" className="h-12 rounded-full bg-[color:var(--brand)] hover:bg-[color:var(--brand-dark)] font-bold px-6">
         Subscribe
-        <Calendar className="ml-1 h-4 w-4 opacity-0 hidden" />
       </Button>
     </form>
   );
