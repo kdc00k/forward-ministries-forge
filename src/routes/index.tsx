@@ -251,8 +251,8 @@ function Welcome() {
 const services = [
   { icon: Heart, title: "Sunday Worship", time: "Sundays · 11:00 AM" },
   { icon: BookOpen, title: "Bible Study", time: "Wednesdays · 6:00 PM" },
-  { icon: Sparkles, title: "Prayer Night", time: "Thursdays · 6:30 PM" },
-  { icon: Music, title: "Youth Worship", time: "Fridays · 7:00 PM" },
+  { icon: Sparkles, title: "Prayer Night", time: "Mondays · 7:00 PM" },
+  { icon: Music, title: "Sunday School", time: "Sundays · 10:00 AM" },
 ];
 
 function ServiceTimes() {

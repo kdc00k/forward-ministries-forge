@@ -47,7 +47,7 @@ export function Footer() {
             <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-[color:var(--brand-accent)]" /><a href="mailto:hello@forwardchurch.org" className="hover:text-[color:var(--brand-accent)]">hello@forwardchurch.org</a></li>
           </ul>
           <h4 className="text-white text-sm font-bold uppercase tracking-wider mt-7 mb-3">Sundays</h4>
-          <p className="text-sm text-white/75">9:00am · 11:00am</p>
+          <p className="text-sm text-white/75">11:00 AM</p>
         </div>
 
         <div>
