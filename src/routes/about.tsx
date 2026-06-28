@@ -3,7 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Compass, Cross, Flame, HeartHandshake } from "lucide-react";
-import welcomePastor from "@/assets/welcome-pastor.jpg";
+import pastorDavid from "@/assets/pastor-david-carter.jpg.asset.json";
 import community from "@/assets/community-fellowship.jpg";
 
 export const Route = createFileRoute("/about")({
