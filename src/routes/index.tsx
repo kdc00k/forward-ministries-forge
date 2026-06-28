@@ -732,7 +732,7 @@ function Giving() {
 const posts = [
   { tag: "Announcement", title: "Forward Conference 2026 is here", excerpt: "Three nights of worship, teaching, and prayer. Tickets open Monday.", img: sermonStage },
   { tag: "Story", title: "Hope on the East Side", excerpt: "How one small group started a back-to-school giveaway that served 400 families.", img: community },
-  { tag: "Blog", title: "5 ways to grow in your prayer life", excerpt: "Pastor David shares practical rhythms anyone can begin this week.", img: welcomePastor },
+  { tag: "Blog", title: "5 ways to grow in your prayer life", excerpt: "Bishop shares practical rhythms anyone can begin this week.", img: welcomePastor },
 ];
 
 function NewsUpdates() {
