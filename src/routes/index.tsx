@@ -210,7 +210,7 @@ function Welcome() {
             <p className="font-display font-extrabold text-[color:var(--brand-dark)] text-lg leading-tight">
               "You're welcome here — exactly as you are."
             </p>
-            <p className="mt-2 text-xs font-bold uppercase tracking-wider text-[color:var(--brand-dark)]/80">Pastor David Carter</p>
+            <p className="mt-2 text-xs font-bold uppercase tracking-wider text-[color:var(--brand-dark)]/80">Bishop Lavorgie Burage</p>
           </div>
         </Reveal>
 
@@ -732,7 +732,7 @@ function Giving() {
 const posts = [
   { tag: "Announcement", title: "Forward Conference 2026 is here", excerpt: "Three nights of worship, teaching, and prayer. Tickets open Monday.", img: sermonStage },
   { tag: "Story", title: "Hope on the East Side", excerpt: "How one small group started a back-to-school giveaway that served 400 families.", img: community },
-  { tag: "Blog", title: "5 ways to grow in your prayer life", excerpt: "Pastor David shares practical rhythms anyone can begin this week.", img: welcomePastor },
+  { tag: "Blog", title: "5 ways to grow in your prayer life", excerpt: "Bishop shares practical rhythms anyone can begin this week.", img: welcomePastor },
 ];
 
 function NewsUpdates() {
