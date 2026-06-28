@@ -40,7 +40,7 @@ function AboutPage() {
         <div className="container-page grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <Reveal>
             <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
-              <img src={welcomePastor} alt="Pastor David Carter" className="h-full w-full object-cover" loading="lazy" width={1280} height={1280} />
+              <img src={pastorDavid.url} alt="Pastor David Carter" className="h-full w-full object-cover" loading="lazy" width={1280} height={1280} />
             </div>
           </Reveal>
           <div>
