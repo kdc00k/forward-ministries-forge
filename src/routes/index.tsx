@@ -36,7 +36,7 @@ import heroVideo1 from "@/assets/hero-user-1.mp4.asset.json";
 import heroVideo2 from "@/assets/hero-user-2.mp4.asset.json";
 import heroVideo3 from "@/assets/hero-user-3.mp4.asset.json";
 import heroVideo4 from "@/assets/hero-user-4.mp4.asset.json";
-import welcomePastor from "@/assets/welcome-pastor.jpg";
+import bishopWelcome from "@/assets/bishop-welcome.jpg.asset.json";
 import community from "@/assets/community-fellowship.jpg";
 import kids from "@/assets/ministry-kids.jpg";
 import youth from "@/assets/ministry-youth.jpg";
