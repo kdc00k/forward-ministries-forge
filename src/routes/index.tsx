@@ -249,10 +249,10 @@ function Welcome() {
 /* --------------------------- SERVICE TIMES --------------------------- */
 
 const services = [
-  { icon: Heart, title: "Sunday Worship", time: "Sundays · 11:00 AM", location: "Main Auditorium" },
-  { icon: BookOpen, title: "Bible Study", time: "Wednesdays · 6:00 PM", location: "Main Auditorium" },
-  { icon: Sparkles, title: "Prayer Night", time: "Thursdays · 6:30 PM", location: "Zoom" },
-  { icon: Music, title: "Youth Worship", time: "Fridays · 7:00 PM", location: "Forward Youth Hall" },
+  { icon: Heart, title: "Sunday Worship", time: "Sundays · 11:00 AM" },
+  { icon: BookOpen, title: "Bible Study", time: "Wednesdays · 6:00 PM" },
+  { icon: Sparkles, title: "Prayer Night", time: "Thursdays · 6:30 PM" },
+  { icon: Music, title: "Youth Worship", time: "Fridays · 7:00 PM" },
 ];
 
 function ServiceTimes() {
@@ -274,7 +274,6 @@ function ServiceTimes() {
                   </div>
                   <h3 className="mt-5 text-xl font-display font-extrabold">{s.title}</h3>
                   <p className="mt-2 text-sm text-[color:var(--muted-foreground)] flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> {s.time}</p>
-                  <p className="mt-1 text-sm text-[color:var(--muted-foreground)] flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5" /> {s.location}</p>
                 </CardContent>
               </Card>
             </Reveal>
