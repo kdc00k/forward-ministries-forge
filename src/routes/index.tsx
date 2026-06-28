@@ -93,7 +93,7 @@ function HomePage() {
       <Welcome />
       <ServiceTimes />
       <WhyVisit />
-      <LatestSermon />
+      
       <MinistriesGrid />
       <UpcomingEvents />
       <ImpactStats />
