@@ -32,8 +32,10 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { CountUp } from "@/components/site/CountUp";
 
 import heroImage from "@/assets/hero-worship.jpg";
-import heroVideo1 from "@/assets/hero-video-1.mp4.asset.json";
-import heroVideo2 from "@/assets/hero-video-2.mp4.asset.json";
+import heroVideo1 from "@/assets/hero-user-1.mp4.asset.json";
+import heroVideo2 from "@/assets/hero-user-2.mp4.asset.json";
+import heroVideo3 from "@/assets/hero-user-3.mp4.asset.json";
+import heroVideo4 from "@/assets/hero-user-4.mp4.asset.json";
 import welcomePastor from "@/assets/welcome-pastor.jpg";
 import community from "@/assets/community-fellowship.jpg";
 import kids from "@/assets/ministry-kids.jpg";
@@ -106,16 +108,15 @@ function HomePage() {
 /* ------------------------------- HERO ------------------------------- */
 
 function Hero() {
+  const videos = [heroVideo1.url, heroVideo2.url, heroVideo3.url, heroVideo4.url];
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((i) => (i === 0 ? 1 : 0));
+      setActiveIndex((i) => (i + 1) % videos.length);
     }, 8000);
     return () => clearInterval(interval);
-  }, []);
-
-  const videos = [heroVideo1.url, heroVideo2.url];
+  }, [videos.length]);
 
   return (
     <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
