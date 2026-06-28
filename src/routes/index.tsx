@@ -32,6 +32,8 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { CountUp } from "@/components/site/CountUp";
 
 import heroImage from "@/assets/hero-worship.jpg";
+import heroVideo1 from "@/assets/hero-video-1.mp4.asset.json";
+import heroVideo2 from "@/assets/hero-video-2.mp4.asset.json";
 import welcomePastor from "@/assets/welcome-pastor.jpg";
 import community from "@/assets/community-fellowship.jpg";
 import kids from "@/assets/ministry-kids.jpg";
