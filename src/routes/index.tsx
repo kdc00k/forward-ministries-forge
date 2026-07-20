@@ -23,7 +23,6 @@ import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 
@@ -383,12 +382,6 @@ function MinistriesGrid() {
 
 /* --------------------------- PLAN YOUR VISIT --------------------------- */
 
-const faqs = [
-  { q: "What should I wear?", a: "Come as you are. Most folks wear casual — jeans, dresses, even shorts in summer. We just want you here." },
-  { q: "Where do I park?", a: "Free parking is available on-site, with guest parking marked near the main entrance. Greeters are ready to help." },
-  { q: "What about my kids?", a: "Forward Kids is staffed by background-checked volunteers with secure check-in and age-appropriate environments for ages 0–5th grade." },
-  { q: "How long is the service?", a: "Sunday services run about 75 minutes — worship, a clear message from the Bible, and time to respond." },
-];
 
 function PlanYourVisit() {
   return (
