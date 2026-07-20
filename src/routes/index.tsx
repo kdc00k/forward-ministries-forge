@@ -23,7 +23,6 @@ import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 
@@ -383,12 +382,6 @@ function MinistriesGrid() {
 
 /* --------------------------- PLAN YOUR VISIT --------------------------- */
 
-const faqs = [
-  { q: "What should I wear?", a: "Come as you are. Most folks wear casual — jeans, dresses, even shorts in summer. We just want you here." },
-  { q: "Where do I park?", a: "Free parking is available on-site, with guest parking marked near the main entrance. Greeters are ready to help." },
-  { q: "What about my kids?", a: "Forward Kids is staffed by background-checked volunteers with secure check-in and age-appropriate environments for ages 0–5th grade." },
-  { q: "How long is the service?", a: "Sunday services run about 75 minutes — worship, a clear message from the Bible, and time to respond." },
-];
 
 function PlanYourVisit() {
   return (
@@ -422,17 +415,6 @@ function PlanYourVisit() {
           <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-card)] bg-white">
             <div className="aspect-[16/10] overflow-hidden">
               <img src={exterior} alt="Forward Church building exterior" className="h-full w-full object-cover" loading="lazy" width={1600} height={1000} />
-            </div>
-            <div className="p-6 md:p-8">
-              <h3 className="text-xl font-display font-extrabold">Frequently asked</h3>
-              <Accordion type="single" collapsible className="mt-4">
-                {faqs.map((f) => (
-                  <AccordionItem key={f.q} value={f.q}>
-                    <AccordionTrigger className="text-left font-bold text-[color:var(--brand-dark)]">{f.q}</AccordionTrigger>
-                    <AccordionContent className="text-[color:var(--muted-foreground)] leading-relaxed">{f.a}</AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
             </div>
           </div>
         </Reveal>
