@@ -423,17 +423,6 @@ function PlanYourVisit() {
             <div className="aspect-[16/10] overflow-hidden">
               <img src={exterior} alt="Forward Church building exterior" className="h-full w-full object-cover" loading="lazy" width={1600} height={1000} />
             </div>
-            <div className="p-6 md:p-8">
-              <h3 className="text-xl font-display font-extrabold">Frequently asked</h3>
-              <Accordion type="single" collapsible className="mt-4">
-                {faqs.map((f) => (
-                  <AccordionItem key={f.q} value={f.q}>
-                    <AccordionTrigger className="text-left font-bold text-[color:var(--brand-dark)]">{f.q}</AccordionTrigger>
-                    <AccordionContent className="text-[color:var(--muted-foreground)] leading-relaxed">{f.a}</AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
           </div>
         </Reveal>
       </div>
