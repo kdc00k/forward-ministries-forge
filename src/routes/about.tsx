@@ -122,31 +122,6 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="section bg-[color:var(--brand-soft)]">
-        <div className="container-page">
-          <Reveal className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[color:var(--brand)]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--brand-accent)]" /> What We Believe
-            </span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-display font-extrabold leading-[1.05] tracking-tight">
-              Four convictions that shape everything.
-            </h2>
-          </Reveal>
-          <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {beliefs.map((b, i) => (
-              <Reveal key={b.title} delay={i * 0.05}>
-                <div className="h-full rounded-2xl bg-white p-7 shadow-[var(--shadow-card)]">
-                  <div className="h-12 w-12 grid place-items-center rounded-xl bg-[color:var(--brand)] text-white">
-                    <b.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="mt-5 text-lg font-display font-extrabold">{b.title}</h3>
-                  <p className="mt-2 text-sm text-[color:var(--muted-foreground)] leading-relaxed">{b.body}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section bg-white">
         <div className="container-page rounded-[2rem] overflow-hidden relative">
