@@ -23,12 +23,6 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
-const beliefs = [
-  { icon: Cross, title: "Jesus is the Way", body: "We believe in the gospel of Jesus Christ — His life, death, resurrection, and return." },
-  { icon: Flame, title: "The Spirit Empowers", body: "We rely on the Holy Spirit to lead, teach, and equip the church for every good work." },
-  { icon: Compass, title: "Scripture Guides Us", body: "The Bible is our authority for life, doctrine, and direction as a community." },
-  { icon: HeartHandshake, title: "People Matter Most", body: "Every person matters to God — so every person matters to us." },
-];
 
 function AboutPage() {
   return (
