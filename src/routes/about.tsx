@@ -58,19 +58,19 @@ function AboutPage() {
             </Reveal>
             <Reveal delay={0.15}>
               <p className="mt-4 text-[color:var(--muted-foreground)] leading-relaxed">
-                Bishop Lavorgie Burage is a preacher, pastor, teacher, husband, father, and servant of God whose life is a testimony of what happens when you say yes to the call of God.
+                   Bishop Lavorgie Burage is a preacher, pastor, teacher, husband, father, and servant of God whose life is a testimony of what happens when you say yes to the call of God. 
 
-                At just 11 years old, he answered the call to preach under the leadership of Bishop Manuel Watson. For 29 years, he has faithfully proclaimed the Gospel, and for the past 4 years, he has served as a pastor.
+                   At just 11 years old, he answered the call to preach under the leadership of Bishop Manuel Watson. For 29 years, he has faithfully proclaimed the Gospel, and for the past 4 years, he has served as a pastor. 
 
-                At the age of 18, Bishop Burage married his wife, Karlicia. Today, they celebrate 22 years of marriage and counting, and together they are the proud parents of three wonderful children who are growing in God and actively serving in ministry.
+                   At the age of 18, Bishop Burage married his wife, Karlicia. Today, they celebrate 22 years of marriage and counting, and together they are the proud parents of three wonderful children who are growing in God and actively serving in ministry. 
 
-                Bishop Burage later served under the leadership of his father-in-law, Bishop Tyson Johnson, where he served faithfully as an Assistant Pastor and Bishop, spending more than 20 years growing, serving, and developing in ministry.
+                   Bishop Burage later served under the leadership of his father-in-law, Bishop Tyson Johnson, where he served faithfully as an Assistant Pastor and Bishop, spending more than 20 years growing, serving, and developing in ministry. 
 
-                He is also a graduate of Faulkner University, where he earned both his Bachelor of Business Administration (BBA) and Master of Business Administration (MBA).
+                   He is also a graduate of Faulkner University, where he earned both his Bachelor of Business Administration (BBA) and Master of Business Administration (MBA). 
 
-                After the passing of his pastor, God gave Bishop Burage a new assignment: start a work in your house. What began in his home became a growing ministry through the grace of God. That work eventually moved to its current location and became Forward Church Ministries, where God continues to bless, strengthen, and expand the ministry.
+                   After the passing of his pastor, God gave Bishop Burage a new assignment: start a work in your house. What began in his home became a growing ministry through the grace of God. That work eventually moved to its current location and became Forward Church Ministries, where God continues to bless, strengthen, and expand the ministry. 
 
-                Bishop Burage’s life is a testimony that when God calls you, He will provide the grace to fulfill the assignment.
+                   Bishop Burage’s life is a testimony that when God calls you, He will provide the grace to fulfill the assignment. 
 
                 But this isn’t the end of the story.
 
