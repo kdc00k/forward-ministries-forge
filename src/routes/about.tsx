@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Compass, Cross, Flame, HeartHandshake } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import bishopPhoto from "@/assets/pastor-david-carter.jpg.asset.json";
 import karliciaPhoto from "@/assets/leader-karlicia.jpg";
 import shantonPhoto from "@/assets/leader-shanton.jpg";
