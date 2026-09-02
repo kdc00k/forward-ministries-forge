@@ -101,11 +101,12 @@ function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
 
-  // Play only the active clip; advance when it ends, and stop on the last one.
+  // Play only the active clip; advance when it ends and cycle back to the first.
   useEffect(() => {
     videoRefs.current.forEach((el, i) => {
       if (!el) return;
       if (i === activeIndex) {
+        el.currentTime = 0;
         el.play().catch(() => {});
       } else {
         el.pause();
@@ -125,7 +126,7 @@ function Hero() {
         height={1280}
       />
 
-      {/* Sequential video backgrounds with crossfade — plays each clip once */}
+      {/* Sequential video backgrounds with crossfade — each clip plays fully, then cycles */}
       {videos.map((src, i) => (
         <video
           key={src}
@@ -138,7 +139,7 @@ function Hero() {
           preload="auto"
           poster={heroImage}
           onEnded={() => {
-            if (i < videos.length - 1) setActiveIndex(i + 1);
+            setActiveIndex((i + 1) % videos.length);
           }}
           className="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out"
           style={{ opacity: activeIndex === i ? 1 : 0 }}
