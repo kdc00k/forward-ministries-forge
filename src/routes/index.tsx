@@ -210,7 +210,7 @@ function Welcome() {
           </div>
           <div className="absolute -bottom-6 -right-4 lg:-right-10 max-w-[260px] rounded-2xl bg-[color:var(--brand-accent)] p-5 shadow-xl">
             <p className="font-display font-extrabold text-[color:var(--brand-dark)] text-lg leading-tight">
-              "You're welcome here — exactly as you are."
+              "You're welcome here  exactly as you are."
             </p>
             <p className="mt-2 text-xs font-bold uppercase tracking-wider text-[color:var(--brand-dark)]/80">Bishop Lavorgie Burage</p>
           </div>
