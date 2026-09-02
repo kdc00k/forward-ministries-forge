@@ -229,7 +229,7 @@ function Welcome() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-lg text-[color:var(--muted-foreground)] leading-relaxed">
-              Whether you're exploring faith for the first time or you've walked with Jesus for decades, Forward Church is a place to belong. We gather every Sunday in Mobile to worship, learn, and care for one another — and to step boldly into what God is doing next.
+              Whether you're exploring faith for the first time or you've walked with Jesus for decades, Forward Church is a place to belong. We gather every Sunday in Mobile to worship, learn, and care for one another  and to step boldly into what God is doing next.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
@@ -291,7 +291,7 @@ function ServiceTimes() {
 const whyVisit = [
   { icon: Users, title: "Friendly Community", body: "Real people, real conversations, real friendships. Come as you are." },
   { icon: Music, title: "Powerful Worship", body: "Spirit-led worship that lifts your eyes and renews your heart." },
-  { icon: BookOpen, title: "Biblical Teaching", body: "Clear, practical messages rooted in Scripture — for real life today." },
+  { icon: BookOpen, title: "Biblical Teaching", body: "Clear, practical messages rooted in Scripture  for real life today." },
   { icon: Baby, title: "Kids & Family", body: "Safe, fun, faith-filled environments for every child and student." },
 ];
 
