@@ -101,11 +101,12 @@ function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
 
-  // Play only the active clip; advance when it ends, and stop on the last one.
+  // Play only the active clip; advance when it ends and cycle back to the first.
   useEffect(() => {
     videoRefs.current.forEach((el, i) => {
       if (!el) return;
       if (i === activeIndex) {
+        el.currentTime = 0;
         el.play().catch(() => {});
       } else {
         el.pause();
