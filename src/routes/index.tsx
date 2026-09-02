@@ -125,7 +125,7 @@ function Hero() {
         height={1280}
       />
 
-      {/* Sequential video backgrounds with crossfade — plays each clip once */}
+      {/* Sequential video backgrounds with crossfade — each clip plays fully, then cycles */}
       {videos.map((src, i) => (
         <video
           key={src}
@@ -138,7 +138,7 @@ function Hero() {
           preload="auto"
           poster={heroImage}
           onEnded={() => {
-            if (i < videos.length - 1) setActiveIndex(i + 1);
+            setActiveIndex((i + 1) % videos.length);
           }}
           className="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out"
           style={{ opacity: activeIndex === i ? 1 : 0 }}
