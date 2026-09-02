@@ -14,7 +14,6 @@ import { Route as PlanAVisitRouteImport } from './routes/plan-a-visit'
 import { Route as MinistriesRouteImport } from './routes/ministries'
 import { Route as ImNewRouteImport } from './routes/im-new'
 import { Route as GiveRouteImport } from './routes/give'
-import { Route as EventsRouteImport } from './routes/events'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -44,11 +43,6 @@ const GiveRoute = GiveRouteImport.update({
   path: '/give',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EventsRoute = EventsRouteImport.update({
-  id: '/events',
-  path: '/events',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -69,7 +63,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/events': typeof EventsRoute
   '/give': typeof GiveRoute
   '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
@@ -80,7 +73,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/events': typeof EventsRoute
   '/give': typeof GiveRoute
   '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
@@ -92,7 +84,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/events': typeof EventsRoute
   '/give': typeof GiveRoute
   '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
@@ -105,7 +96,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/events'
     | '/give'
     | '/im-new'
     | '/ministries'
@@ -116,7 +106,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/events'
     | '/give'
     | '/im-new'
     | '/ministries'
@@ -127,7 +116,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/events'
     | '/give'
     | '/im-new'
     | '/ministries'
@@ -139,7 +127,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
-  EventsRoute: typeof EventsRoute
   GiveRoute: typeof GiveRoute
   ImNewRoute: typeof ImNewRoute
   MinistriesRoute: typeof MinistriesRoute
@@ -184,13 +171,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GiveRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/events': {
-      id: '/events'
-      path: '/events'
-      fullPath: '/events'
-      preLoaderRoute: typeof EventsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -219,7 +199,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
-  EventsRoute: EventsRoute,
   GiveRoute: GiveRoute,
   ImNewRoute: ImNewRoute,
   MinistriesRoute: MinistriesRoute,
