@@ -33,7 +33,6 @@ export function Footer() {
             <li><Link to="/about" className="hover:text-[color:var(--brand-accent)]">About</Link></li>
             <li><Link to="/im-new" className="hover:text-[color:var(--brand-accent)]">I'm New</Link></li>
             <li><Link to="/ministries" className="hover:text-[color:var(--brand-accent)]">Ministries</Link></li>
-            <li><Link to="/events" className="hover:text-[color:var(--brand-accent)]">Events</Link></li>
             <li><Link to="/watch" className="hover:text-[color:var(--brand-accent)]">Watch</Link></li>
             <li><Link to="/give" className="hover:text-[color:var(--brand-accent)]">Give</Link></li>
           </ul>

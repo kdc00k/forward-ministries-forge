@@ -9,7 +9,6 @@ const items = [
   { to: "/about", label: "About" },
   { to: "/im-new", label: "I'm New" },
   { to: "/ministries", label: "Ministries" },
-  { to: "/events", label: "Events" },
   { to: "/watch", label: "Watch" },
   { to: "/give", label: "Give" },
   { to: "/contact", label: "Contact" },
