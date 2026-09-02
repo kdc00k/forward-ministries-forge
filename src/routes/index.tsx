@@ -19,7 +19,7 @@ import {
   Camera,
   Coffee,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -99,13 +99,19 @@ function HomePage() {
 function Hero() {
   const videos = [heroVideo1.url, heroVideo2.url, heroVideo3.url, heroVideo4.url];
   const [activeIndex, setActiveIndex] = useState(0);
+  const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
 
+  // Play only the active clip; advance when it ends, and stop on the last one.
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((i) => (i + 1) % videos.length);
-    }, 8000);
-    return () => clearInterval(interval);
-  }, [videos.length]);
+    videoRefs.current.forEach((el, i) => {
+      if (!el) return;
+      if (i === activeIndex) {
+        el.play().catch(() => {});
+      } else {
+        el.pause();
+      }
+    });
+  }, [activeIndex]);
 
   return (
     <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
@@ -119,22 +125,28 @@ function Hero() {
         height={1280}
       />
 
-      {/* Cycling video backgrounds with crossfade */}
+      {/* Sequential video backgrounds with crossfade — plays each clip once */}
       {videos.map((src, i) => (
         <video
           key={src}
-          autoPlay
-          loop
+          ref={(el) => {
+            videoRefs.current[i] = el;
+          }}
+          autoPlay={i === 0}
           muted
           playsInline
           preload="auto"
           poster={heroImage}
+          onEnded={() => {
+            if (i < videos.length - 1) setActiveIndex(i + 1);
+          }}
           className="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out"
           style={{ opacity: activeIndex === i ? 1 : 0 }}
         >
           <source src={src} type="video/mp4" />
         </video>
       ))}
+
 
       <div className="absolute inset-0 hero-overlay" />
 
