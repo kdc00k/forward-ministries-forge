@@ -169,7 +169,115 @@ function AboutPage() {
                 </Reveal>
                 <Reveal delay={0.1}>
                   <p className="mt-5 text-[color:var(--muted-foreground)] leading-relaxed">
-                    Passionate about reaching the next generation with the gospel and creating a space where young people belong, believe, and become leaders.
+                     Shanton Collins is a devoted husband, loving
+
+                     father of three, grandfather, uncle, preacher,
+
+                     teacher, Youth Pastor and faithful servant of God
+
+                     whose life is centered on faith, family, service,
+
+                     and purpose.
+
+                     At the heart of Shanton’s life is his relationship
+
+                     with God and his family. He is the husband of
+
+                     Minister Shellessa Collins, whom he strives to
+
+                     love and honor according to the biblical example
+
+                     of Christ’s love for the Church. Together, Shanton
+
+                     and Shellessa have built their lives upon faith,
+
+                     family and ministry. Youth Pastor
+
+                     Shanton and his wife are also among the
+
+                     founding members of Forward Church Ministries
+
+                     , where they have had the privilege of helping
+
+                     establish and support a ministry dedicated to
+
+                     advancing the Kingdom of God and impactinglives through the Gospel of Jesus Christ.
+
+                     Shanton has a tremendous love for the Word of
+
+                     God. He believes that Scripture is more than
+
+                     something to be read—it is something to be
+
+                     studied, taught and most of all lived. His passion
+
+                     for biblical truth has helped shape his ministry
+
+                     as a preacher and teacher and has strengthened
+
+                     his desire to help others develop a deeper
+
+                     relationship with Christ.
+
+                     For approximately two years, Shanton has
+
+                     faithfully served as a Youth Pastor. During that
+
+                     time, he has experienced tremendous personal
+
+                     and spiritual growth. While his responsibility is
+
+                     to teach and encourage young people, he
+
+                     recognizes that serving them has also
+
+                     challenged him to study more deeply, pray more
+
+                     intentionally, and continue growing in his own
+
+                     understanding of God's Word.
+
+                     Shanton is especially grateful to Bishop Burage
+
+                     for entrusting him with the opportunity to servein youth ministry and for providing him with the
+
+                     spiritual leadership for his continued
+
+                     development. He considers it an honor to have
+
+                     been given the opportunity to grow under Bishop
+
+                     Burage's leadership, wisdom, and guidance.
+
+                     His heart for youth extends well beyond the
+
+                     walls of the church. Shanton has a genuine love
+
+                     for children and believes strongly that they are
+
+                     the Church of tomorrow. He understands that
+
+                     investing in young people today helps shape the
+
+                     families, churches, communities, and leaders of
+
+                     the future. His desire is not simply to teach
+
+                     children biblical principles, but to help them
+
+                     recognize their value, discover their God-given
+
+                     potential, and understand that their
+
+                     circumstances do not have to determine their
+
+                     future.
+
+                     His life and ministry are grounded in a
+
+                     simple conviction: when God gives you an
+
+                     opportunity, a responsibility, or a person to serve,you should leave it better than you found it.
                   </p>
                 </Reveal>
               </div>
