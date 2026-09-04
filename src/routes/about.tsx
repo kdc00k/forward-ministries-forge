@@ -104,41 +104,60 @@ function AboutPage() {
               Meet the team.
             </h2>
           </Reveal>
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
-            <Reveal delay={0.05}>
-              <div className="text-center">
-                <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)] mx-auto max-w-sm">
+          <div className="mt-14 space-y-16 lg:space-y-24">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <Reveal>
+                <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
                   <img src={karliciaPhoto} alt="First Lady Karlicia Franklin-Burage" className="h-full w-full object-cover" loading="lazy" width={1024} height={1280} />
                 </div>
-                <h3 className="mt-5 text-xl font-display font-extrabold">Karlicia Franklin-Burage</h3>
-                <p className="mt-1 text-sm font-bold uppercase tracking-wider text-[color:var(--brand)]">First Lady</p>
-                <p className="mt-3 text-[color:var(--muted-foreground)] text-sm leading-relaxed max-w-xs mx-auto">
-                  A devoted servant-leader who walks alongside Bishop in vision and ministry, caring deeply for the women and families of Forward Church.
-                </p>
+              </Reveal>
+              <div>
+                <Reveal>
+                  <p className="text-sm font-bold uppercase tracking-wider text-[color:var(--brand)]">First Lady</p>
+                </Reveal>
+                <Reveal delay={0.05}>
+                  <h3 className="mt-3 text-3xl md:text-4xl font-display font-extrabold leading-[1.05] tracking-tight">
+                    Karlicia Franklin-Burage
+                  </h3>
+                </Reveal>
+                <Reveal delay={0.1}>
+                  <p className="mt-5 text-[color:var(--muted-foreground)] leading-relaxed">
+                    A devoted servant-leader who walks alongside Bishop in vision and ministry, caring deeply for the women and families of Forward Church.
+                  </p>
+                </Reveal>
               </div>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <div className="text-center">
-                <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)] mx-auto max-w-sm">
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <Reveal className="lg:order-2">
+                <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
                   <img src={shantonPhoto} alt="Youth Pastor Shanton Collins" className="h-full w-full object-cover" loading="lazy" width={1024} height={1280} />
                 </div>
-                <h3 className="mt-5 text-xl font-display font-extrabold">Shanton Collins</h3>
-                <p className="mt-1 text-sm font-bold uppercase tracking-wider text-[color:var(--brand)]">Youth Pastor</p>
-                <p className="mt-3 text-[color:var(--muted-foreground)] text-sm leading-relaxed max-w-xs mx-auto">
-                  Passionate about reaching the next generation with the gospel and creating a space where young people belong, believe, and become leaders.
-                </p>
+              </Reveal>
+              <div className="lg:order-1">
+                <Reveal>
+                  <p className="text-sm font-bold uppercase tracking-wider text-[color:var(--brand)]">Youth Pastor</p>
+                </Reveal>
+                <Reveal delay={0.05}>
+                  <h3 className="mt-3 text-3xl md:text-4xl font-display font-extrabold leading-[1.05] tracking-tight">
+                    Shanton Collins
+                  </h3>
+                </Reveal>
+                <Reveal delay={0.1}>
+                  <p className="mt-5 text-[color:var(--muted-foreground)] leading-relaxed">
+                    Passionate about reaching the next generation with the gospel and creating a space where young people belong, believe, and become leaders.
+                  </p>
+                </Reveal>
               </div>
-            </Reveal>
-            <Reveal delay={0.15}>
+            </div>
+
+            <Reveal>
               <div className="text-center">
                 <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)] mx-auto max-w-sm">
                   <img src={jermeciaPhoto} alt="Worship Leader Jermecia Frazier" className="h-full w-full object-cover" loading="lazy" width={1024} height={1280} />
                 </div>
                 <h3 className="mt-5 text-xl font-display font-extrabold">Jermecia Frazier</h3>
                 <p className="mt-1 text-sm font-bold uppercase tracking-wider text-[color:var(--brand)]">Worship Leader</p>
-                <p className="mt-3 text-[color:var(--muted-foreground)] text-sm leading-relaxed max-w-xs mx-auto">
-                  Leads the congregation into authentic worship with a heart for praise that invites every person to encounter the presence of God.
-                </p>
               </div>
             </Reveal>
           </div>
