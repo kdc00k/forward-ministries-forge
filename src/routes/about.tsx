@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import bishopPhoto from "@/assets/pastor-david-carter.jpg.asset.json";
 import karliciaPhoto from "@/assets/leader-karlicia.jpg";
 import shantonPhoto from "@/assets/leader-shanton.jpg";
-import jermeciaPhoto from "@/assets/leader-jermecia.jpg";
+
 import community from "@/assets/community-fellowship.jpg";
 
 export const Route = createFileRoute("/about")({
