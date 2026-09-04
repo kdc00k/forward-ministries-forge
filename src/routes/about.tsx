@@ -145,16 +145,6 @@ function AboutPage() {
                 </Reveal>
               </div>
             </div>
-
-            <Reveal>
-              <div className="text-center">
-                <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)] mx-auto max-w-sm">
-                  <img src={jermeciaPhoto} alt="Worship Leader Jermecia Frazier" className="h-full w-full object-cover" loading="lazy" width={1024} height={1280} />
-                </div>
-                <h3 className="mt-5 text-xl font-display font-extrabold">Jermecia Frazier</h3>
-                <p className="mt-1 text-sm font-bold uppercase tracking-wider text-[color:var(--brand)]">Worship Leader</p>
-              </div>
-            </Reveal>
           </div>
         </div>
       </section>
