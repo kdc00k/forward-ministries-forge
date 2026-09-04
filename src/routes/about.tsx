@@ -117,7 +117,36 @@ function AboutPage() {
                 </Reveal>
                 <Reveal delay={0.1}>
                   <p className="mt-5 text-[color:var(--muted-foreground)] leading-relaxed">
-                    A devoted servant-leader who walks alongside Bishop in vision and ministry, caring deeply for the women and families of Forward Church.
+                     Lady Karlicia Burage is an evangelist, wife, mother, educator, community servant, and woman of God whose life reflects a passion for purpose, people, and ministry.
+
+
+                     For nearly 20 years, Lady Burage has faithfully shared the Gospel, using her voice to encourage, empower, and inspire others to discover their God-given purpose. She holds a Bachelor of Business Administration (BBA) from Faulkner University.
+
+
+                     Lady Burage has been married to Bishop Lavorgie Burage for 22 years, and together they are the proud parents of three wonderful children. Family is at the heart of who she is, and she cherishes spending quality time with her husband, children, friends, and loved ones.
+
+
+                     For more than 20 years, Lady Burage served under the leadership of Bishop Tyson Johnson. During that time, she faithfully assisted his First Lady and served as her adjutant, learning firsthand the responsibility, wisdom, and grace required to be a leading woman in ministry.
+
+
+                     Her heart extends beyond the walls of the church. Lady Burage has a genuine passion for helping women discover their purpose and walk confidently in their God-given assignment. She also has a special heart for children, particularly children with exceptionalities, and is passionate about creating opportunities for them to feel valued, supported, and empowered.
+
+
+                     Her commitment to community is demonstrated through various outreach efforts, including serving families in low-income communities through organizations such as Goodwill and other community initiatives.
+
+
+                     As she continues to serve alongside her husband at Forward Church Ministries, Lady Burage’s ministry continues to develop and unfold. She understands that God doesn’t reveal the entire journey at once—He develops us along the way.
+
+
+                     Her story is still being written.
+                     Her purpose is still unfolding.
+                     Her ministry is still developing.
+
+
+                     And as God continues to lead her, one thing is certain:
+
+
+                     The best chapters of Karlicia Burage’s story is still being written.
                   </p>
                 </Reveal>
               </div>
