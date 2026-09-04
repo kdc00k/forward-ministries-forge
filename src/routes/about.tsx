@@ -41,11 +41,6 @@ function AboutPage() {
             </div>
           </Reveal>
           <div>
-            <Reveal>
-              <span className="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand-soft)] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[color:var(--brand)]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--brand-accent)]" /> Leadership
-              </span>
-            </Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-4 text-4xl md:text-5xl font-display font-extrabold leading-[1.05] tracking-tight">
                 Meet Bishop Lavorgie Burage
