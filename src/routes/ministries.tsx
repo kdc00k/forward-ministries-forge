@@ -5,6 +5,7 @@ import { ArrowRight, Baby, Mic2, Coffee, HandHeart, Sparkles, Music } from "luci
 
 import kidsAsset from "@/assets/ministry-kids.jpg.asset.json";
 import youthAsset from "@/assets/ministry-youth.jpg.asset.json";
+import menAsset from "@/assets/ministry-men.jpg.asset.json";
 
 export const Route = createFileRoute("/ministries")({
   head: () => ({
@@ -24,7 +25,7 @@ const ministries = [
   { icon: Baby, title: "Forward Kids", body: "Sunday environments built for kids birth–5th grade.", img: kidsAsset.url },
   { icon: Mic2, title: "Forward Youth", body: "Middle & high schoolers growing in faith and friendship.", img: youthAsset.url },
   { icon: Coffee, title: "Young Adults", body: "Community for 18–29s navigating life with purpose." },
-  { icon: HandHeart, title: "Men of Forward", body: "Brotherhood, breakfast, and biblical formation." },
+  { icon: HandHeart, title: "Men of Forward", body: "Brotherhood, breakfast, and biblical formation.", img: menAsset.url, pos: "center 18%" },
   { icon: Sparkles, title: "Women of Forward", body: "Studies, retreats, and real friendships." },
   { icon: Music, title: "Worship Ministry", body: "Singers, musicians, and creatives leading our gatherings." },
 ];
@@ -45,7 +46,7 @@ function MinistriesPage() {
               <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[color:var(--border)] bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-cardHover)]">
                 {m.img ? (
                   <div className="aspect-[16/10] overflow-hidden">
-                    <img src={m.img} alt={m.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                    <img src={m.img} alt={m.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" style={m.pos ? { objectPosition: m.pos } : undefined} loading="lazy" />
                   </div>
                 ) : (
                   <div className="aspect-[16/10] grid place-items-center bg-gradient-to-br from-[color:var(--brand-soft)] to-white">
