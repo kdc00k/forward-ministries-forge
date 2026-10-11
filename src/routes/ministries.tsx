@@ -1,18 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import { ArrowRight, Baby, Mic2, Coffee, HandHeart, Sparkles, Globe, Heart, Music, Camera, Users } from "lucide-react";
+import { ArrowRight, Baby, Mic2, Coffee, HandHeart, Sparkles, Music } from "lucide-react";
 
 import kidsAsset from "@/assets/ministry-kids.jpg.asset.json";
 import youthAsset from "@/assets/ministry-youth.jpg.asset.json";
-import outreach from "@/assets/ministry-outreach.jpg";
-import baptism from "@/assets/ministry-baptism.jpg";
 
 export const Route = createFileRoute("/ministries")({
   head: () => ({
     meta: [
       { title: "Ministries — Forward Church Ministries" },
-      { name: "description", content: "Explore ministries for kids, youth, young adults, men, women, outreach, and more at Forward Church." },
+      { name: "description", content: "Explore ministries for kids, youth, young adults, men, women, and worship at Forward Church." },
       { property: "og:title", content: "Ministries at Forward" },
       { property: "og:description", content: "Find your place at Forward Church in Mobile, AL." },
       { property: "og:url", content: "/ministries" },
@@ -28,11 +26,7 @@ const ministries = [
   { icon: Coffee, title: "Young Adults", body: "Community for 18–29s navigating life with purpose." },
   { icon: HandHeart, title: "Men of Forward", body: "Brotherhood, breakfast, and biblical formation." },
   { icon: Sparkles, title: "Women of Forward", body: "Studies, retreats, and real friendships." },
-  { icon: Globe, title: "Outreach", body: "Loving Mobile through tangible, neighbor-first service.", img: outreach },
-  { icon: Heart, title: "Missions", body: "Supporting partners in the U.S. and around the globe.", img: baptism },
   { icon: Music, title: "Worship Ministry", body: "Singers, musicians, and creatives leading our gatherings." },
-  { icon: Camera, title: "Media Team", body: "Video, audio, and design that carries the message further." },
-  { icon: Users, title: "Small Groups", body: "Mid-week circles where faith becomes family." },
 ];
 
 function MinistriesPage() {

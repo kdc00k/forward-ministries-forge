@@ -13,9 +13,7 @@ import {
   Users,
   Sparkles,
   HandHeart,
-  Globe,
   Mic2,
-  Camera,
   Coffee,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -35,8 +33,6 @@ import bishopWelcome from "@/assets/bishop-welcome.jpg.asset.json";
 import community from "@/assets/community-fellowship.jpg";
 import kidsAsset from "@/assets/ministry-kids.jpg.asset.json";
 import youthAsset from "@/assets/ministry-youth.jpg.asset.json";
-import baptism from "@/assets/ministry-baptism.jpg";
-import outreach from "@/assets/ministry-outreach.jpg";
 import sermonStage from "@/assets/sermon-stage.jpg";
 
 export const Route = createFileRoute("/")({
@@ -322,14 +318,10 @@ const ministries = [
   { icon: Coffee, title: "Young Adults", body: "Community for 18–29s navigating life with purpose." },
   { icon: HandHeart, title: "Men of Forward", body: "Brotherhood, breakfast, and biblical formation." },
   { icon: Sparkles, title: "Women of Forward", body: "Studies, retreats, and real friendships." },
-  { icon: Globe, title: "Outreach", body: "Loving Mobile through tangible, neighbor-first service." },
-  { icon: Heart, title: "Missions", body: "Supporting partners in the U.S. and around the globe." },
   { icon: Music, title: "Worship Ministry", body: "Singers, musicians, and creatives leading our gatherings." },
-  { icon: Camera, title: "Media Team", body: "Video, audio, and design that carries the message further." },
-  { icon: Users, title: "Small Groups", body: "Mid-week circles where faith becomes family." },
 ];
 
-const ministryImages = [kidsAsset.url, youthAsset.url, baptism, outreach];
+const ministryImages = [kidsAsset.url, youthAsset.url];
 
 function MinistriesGrid() {
   return (
