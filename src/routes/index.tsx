@@ -446,7 +446,7 @@ function Giving() {
                   <Link to="/give">Give Today <ArrowRight className="ml-1 h-5 w-5" /></Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-full h-13 px-7 bg-white/5 border-white/30 text-white hover:bg-white/15 hover:text-white font-bold">
-                  <Link to="/give">Set Up Recurring</Link>
+                  <Link to="/give">Ways to Give</Link>
                 </Button>
               </div>
             </div>
