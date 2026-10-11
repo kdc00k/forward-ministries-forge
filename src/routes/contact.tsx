@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import { MapPin, Phone, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/contact")({
@@ -71,9 +71,8 @@ function ContactPage() {
               <div className="rounded-2xl border border-[color:var(--border)] p-7">
                 <h3 className="text-xl font-display font-extrabold">Visit Us</h3>
                 <ul className="mt-4 space-y-3 text-sm">
-                  <li className="flex gap-3"><MapPin className="h-5 w-5 text-[color:var(--brand)] shrink-0 mt-0.5" /><span>1234 Forward Way<br />Mobile, AL 36608</span></li>
-                  <li className="flex gap-3"><Phone className="h-5 w-5 text-[color:var(--brand)] shrink-0 mt-0.5" /><a href="tel:+12515550100" className="hover:text-[color:var(--brand)]">(251) 555-0100</a></li>
-                  <li className="flex gap-3"><Mail className="h-5 w-5 text-[color:var(--brand)] shrink-0 mt-0.5" /><a href="mailto:hello@forwardchurch.org" className="hover:text-[color:var(--brand)]">hello@forwardchurch.org</a></li>
+                  <li className="flex gap-3"><MapPin className="h-5 w-5 text-[color:var(--brand)] shrink-0 mt-0.5" /><span>8930 CR-36<br />Mobile, AL 36695</span></li>
+                  <li className="flex gap-3"><Phone className="h-5 w-5 text-[color:var(--brand)] shrink-0 mt-0.5" /><a href="tel:+12514873907" className="hover:text-[color:var(--brand)]">(251) 487-3907</a></li>
                 </ul>
               </div>
             </Reveal>
@@ -81,7 +80,7 @@ function ContactPage() {
               <div className="overflow-hidden rounded-2xl border border-[color:var(--border)] aspect-[16/12]">
                 <iframe
                   title="Forward Church location"
-                  src="https://www.google.com/maps?q=Mobile%2C+AL&output=embed"
+                  src="https://www.google.com/maps?q=8930%20CR-36%2C%20Mobile%2C%20AL%2036695&output=embed"
                   className="h-full w-full"
                   loading="lazy"
                 />

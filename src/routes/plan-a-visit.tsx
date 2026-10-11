@@ -107,7 +107,7 @@ function PlanVisit() {
               </ul>
               <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/80">
                 <p><strong className="text-white">Sundays</strong> · 11:00 AM</p>
-                <p className="mt-1"><strong className="text-white">Address</strong> · 1234 Forward Way, Mobile, AL 36608</p>
+                <p className="mt-1"><strong className="text-white">Address</strong> · 8930 CR-36, Mobile, AL 36695</p>
               </div>
             </div>
           </Reveal>

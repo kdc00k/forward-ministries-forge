@@ -19,7 +19,7 @@ export const Route = createFileRoute("/im-new")({
 });
 
 const steps = [
-  { icon: MapPin, title: "Find us easily", body: "We're at 1234 Forward Way, Mobile, AL 36608. Greeters wave you in from the parking lot." },
+  { icon: MapPin, title: "Find us easily", body: "We're at 8930 CR-36, Mobile, AL 36695. Greeters wave you in from the parking lot." },
   { icon: Car, title: "Park up front", body: "Free guest parking is reserved closest to the main entrance — look for the green signs." },
   { icon: Coffee, title: "Grab coffee", body: "Stop by the Forward Café in the lobby. It's on us — say hi to the team while you're there." },
   { icon: ShieldCheck, title: "Drop the kids", body: "Secure check-in opens 30 minutes before service. Background-checked volunteers care for ages 0–5th grade." },
