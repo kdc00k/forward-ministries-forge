@@ -39,7 +39,6 @@ import youth from "@/assets/ministry-youth.jpg";
 import baptism from "@/assets/ministry-baptism.jpg";
 import outreach from "@/assets/ministry-outreach.jpg";
 import sermonStage from "@/assets/sermon-stage.jpg";
-import exterior from "@/assets/church-exterior.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -399,7 +398,7 @@ function MinistriesGrid() {
 function PlanYourVisit() {
   return (
     <section className="section bg-[color:var(--brand-soft)]">
-      <div className="container-page grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
+      <div className="container-page max-w-3xl">
         <Reveal>
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[color:var(--brand)]">
             <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--brand-accent)]" /> Plan Your Visit
@@ -421,14 +420,6 @@ function PlanYourVisit() {
             <Button asChild size="lg" className="rounded-full h-13 px-7 bg-[color:var(--brand-accent)] text-[color:var(--brand-dark)] hover:bg-[color:var(--brand-accent)]/90 font-bold">
               <Link to="/plan-a-visit">Plan My Visit <ArrowRight className="ml-1 h-5 w-5" /></Link>
             </Button>
-          </div>
-        </Reveal>
-
-        <Reveal delay={0.05}>
-          <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-card)] bg-white">
-            <div className="aspect-[16/10] overflow-hidden">
-              <img src={exterior} alt="Forward Church building exterior" className="h-full w-full object-cover" loading="lazy" width={1600} height={1000} />
-            </div>
           </div>
         </Reveal>
       </div>
