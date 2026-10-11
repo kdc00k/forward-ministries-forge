@@ -1,12 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import { ArrowRight, Baby, Mic2, Coffee, HandHeart, Sparkles, Globe, Heart, Music, Camera, Users } from "lucide-react";
+import { ArrowRight, Baby, Mic2, Coffee, HandHeart, Sparkles, Music } from "lucide-react";
 
 import kidsAsset from "@/assets/ministry-kids.jpg.asset.json";
 import youthAsset from "@/assets/ministry-youth.jpg.asset.json";
-import outreach from "@/assets/ministry-outreach.jpg";
-import baptism from "@/assets/ministry-baptism.jpg";
 
 export const Route = createFileRoute("/ministries")({
   head: () => ({
