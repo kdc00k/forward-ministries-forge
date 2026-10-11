@@ -26,7 +26,7 @@ export const Route = createFileRoute("/ministries")({
 const ministries = [
   { icon: Baby, title: "Forward Kids", body: "Sunday environments built for kids birth–5th grade.", img: kidsAsset.url },
   { icon: Mic2, title: "Forward Youth", body: "Middle & high schoolers growing in faith and friendship.", img: youthAsset.url },
-  { icon: Coffee, title: "Young Adults", body: "Community for 18–29s navigating life with purpose.", img: youngAdultsAsset.url, pos: "center 26%" },
+  { icon: Coffee, title: "Young Adults", body: "Community for 18–29s navigating life with purpose.", img: youngAdultsAsset.url, pos: "center 16%" },
   { icon: HandHeart, title: "Men of Forward", body: "Brotherhood, breakfast, and biblical formation.", img: menAsset.url, pos: "center 33%" },
   { icon: Sparkles, title: "Women of Forward", body: "Studies, retreats, and real friendships.", img: womenAsset.url, pos: "center 58%" },
   { icon: Music, title: "Worship Ministry", body: "Singers, musicians, and creatives leading our gatherings." },
