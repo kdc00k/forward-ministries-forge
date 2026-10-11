@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import {
-  Play,
   ArrowRight,
   ArrowDown,
   Heart,
@@ -179,9 +178,6 @@ function Hero() {
         >
           <Button asChild size="lg" className="h-14 px-7 rounded-full bg-[color:var(--brand-accent)] text-[color:var(--brand-dark)] hover:bg-[color:var(--brand-accent)]/90 font-bold text-base shadow-[0_10px_40px_-10px_rgba(185,225,30,0.6)]">
             <Link to="/plan-a-visit">Plan Your Visit <ArrowRight className="ml-1 h-5 w-5" /></Link>
-          </Button>
-          <Button asChild size="lg" variant="outline" className="h-14 px-7 rounded-full border-white/40 bg-white/5 backdrop-blur text-white hover:bg-white/15 hover:text-white font-bold text-base">
-            <Link to="/watch"><Play className="mr-2 h-5 w-5 fill-current" /> Watch Live</Link>
           </Button>
         </motion.div>
       </div>
