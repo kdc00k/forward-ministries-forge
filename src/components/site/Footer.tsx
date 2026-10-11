@@ -41,7 +41,7 @@ export function Footer() {
           <h4 className="text-white text-sm font-bold uppercase tracking-wider mb-5">Visit Us</h4>
           <ul className="space-y-3 text-sm text-white/75">
             <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-[color:var(--brand-accent)]" /><span>8930 CR-36<br />Mobile, AL 36695</span></li>
-            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[color:var(--brand-accent)]" /><a href="tel:+12515550100" className="hover:text-[color:var(--brand-accent)]">(251) 555-0100</a></li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[color:var(--brand-accent)]" /><a href="tel:+12514873907" className="hover:text-[color:var(--brand-accent)]">(251) 487-3907</a></li>
             <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-[color:var(--brand-accent)]" /><a href="mailto:hello@forwardchurch.org" className="hover:text-[color:var(--brand-accent)]">hello@forwardchurch.org</a></li>
           </ul>
           <h4 className="text-white text-sm font-bold uppercase tracking-wider mt-7 mb-3">Sundays</h4>
