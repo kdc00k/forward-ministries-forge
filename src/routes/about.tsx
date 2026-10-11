@@ -4,7 +4,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import bishopPhoto from "@/assets/pastor-david-carter.jpg.asset.json";
-import karliciaPhoto from "@/assets/leader-karlicia.jpg";
+import karliciaPhoto from "@/assets/leader-karlicia.jpg.asset.json";
 import shantonPhoto from "@/assets/leader-shanton.jpg.asset.json";
 
 import community from "@/assets/community-fellowship.jpg";
@@ -103,7 +103,7 @@ function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <Reveal>
                 <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
-                  <img src={karliciaPhoto} alt="First Lady Karlicia Franklin-Burage" className="h-full w-full object-cover" loading="lazy" width={1024} height={1280} />
+                  <img src={karliciaPhoto.url} alt="First Lady Karlicia Franklin-Burage" className="h-full w-full object-cover" loading="lazy" width={1024} height={1280} />
                 </div>
               </Reveal>
               <div>
