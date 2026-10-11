@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { Play, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/Reveal";
@@ -45,7 +44,7 @@ export default function LatestSermon() {
                 <h3 className="mt-1 text-2xl md:text-3xl font-display font-extrabold !text-white">The Power of Forward Faith</h3>
               </div>
               <Button asChild className="rounded-full bg-white text-[color:var(--brand-dark)] hover:bg-white/90 font-bold">
-                <Link to="/watch">Watch More <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                <a href="#">Watch More <ArrowRight className="ml-1 h-4 w-4" /></a>
               </Button>
             </div>
           </div>
