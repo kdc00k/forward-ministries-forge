@@ -9,7 +9,6 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WatchRouteImport } from './routes/watch'
 import { Route as PlanAVisitRouteImport } from './routes/plan-a-visit'
 import { Route as MinistriesRouteImport } from './routes/ministries'
 import { Route as ImNewRouteImport } from './routes/im-new'
@@ -18,11 +17,6 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
-const WatchRoute = WatchRouteImport.update({
-  id: '/watch',
-  path: '/watch',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const PlanAVisitRoute = PlanAVisitRouteImport.update({
   id: '/plan-a-visit',
   path: '/plan-a-visit',
@@ -67,7 +61,6 @@ export interface FileRoutesByFullPath {
   '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
   '/plan-a-visit': typeof PlanAVisitRoute
-  '/watch': typeof WatchRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -77,7 +70,6 @@ export interface FileRoutesByTo {
   '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
   '/plan-a-visit': typeof PlanAVisitRoute
-  '/watch': typeof WatchRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -88,7 +80,6 @@ export interface FileRoutesById {
   '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
   '/plan-a-visit': typeof PlanAVisitRoute
-  '/watch': typeof WatchRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -100,7 +91,6 @@ export interface FileRouteTypes {
     | '/im-new'
     | '/ministries'
     | '/plan-a-visit'
-    | '/watch'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -110,7 +100,6 @@ export interface FileRouteTypes {
     | '/im-new'
     | '/ministries'
     | '/plan-a-visit'
-    | '/watch'
   id:
     | '__root__'
     | '/'
@@ -120,7 +109,6 @@ export interface FileRouteTypes {
     | '/im-new'
     | '/ministries'
     | '/plan-a-visit'
-    | '/watch'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -131,18 +119,10 @@ export interface RootRouteChildren {
   ImNewRoute: typeof ImNewRoute
   MinistriesRoute: typeof MinistriesRoute
   PlanAVisitRoute: typeof PlanAVisitRoute
-  WatchRoute: typeof WatchRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/watch': {
-      id: '/watch'
-      path: '/watch'
-      fullPath: '/watch'
-      preLoaderRoute: typeof WatchRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/plan-a-visit': {
       id: '/plan-a-visit'
       path: '/plan-a-visit'
@@ -203,7 +183,6 @@ const rootRouteChildren: RootRouteChildren = {
   ImNewRoute: ImNewRoute,
   MinistriesRoute: MinistriesRoute,
   PlanAVisitRoute: PlanAVisitRoute,
-  WatchRoute: WatchRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
