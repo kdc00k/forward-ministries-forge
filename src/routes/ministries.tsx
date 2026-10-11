@@ -6,6 +6,7 @@ import { ArrowRight, Baby, Mic2, Coffee, HandHeart, Sparkles, Music } from "luci
 import kidsAsset from "@/assets/ministry-kids.jpg.asset.json";
 import youthAsset from "@/assets/ministry-youth.jpg.asset.json";
 import menAsset from "@/assets/ministry-men.jpg.asset.json";
+import womenAsset from "@/assets/ministry-women.jpg.asset.json";
 
 export const Route = createFileRoute("/ministries")({
   head: () => ({
@@ -26,7 +27,7 @@ const ministries = [
   { icon: Mic2, title: "Forward Youth", body: "Middle & high schoolers growing in faith and friendship.", img: youthAsset.url },
   { icon: Coffee, title: "Young Adults", body: "Community for 18–29s navigating life with purpose." },
   { icon: HandHeart, title: "Men of Forward", body: "Brotherhood, breakfast, and biblical formation.", img: menAsset.url, pos: "center 18%" },
-  { icon: Sparkles, title: "Women of Forward", body: "Studies, retreats, and real friendships." },
+  { icon: Sparkles, title: "Women of Forward", body: "Studies, retreats, and real friendships.", img: womenAsset.url, pos: "center 58%" },
   { icon: Music, title: "Worship Ministry", body: "Singers, musicians, and creatives leading our gatherings." },
 ];
 
