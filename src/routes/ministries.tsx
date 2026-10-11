@@ -4,7 +4,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { ArrowRight, Baby, Mic2, Coffee, HandHeart, Sparkles, Globe, Heart, Music, Camera, Users } from "lucide-react";
 
 import kidsAsset from "@/assets/ministry-kids.jpg.asset.json";
-import youth from "@/assets/ministry-youth.jpg";
+import youthAsset from "@/assets/ministry-youth.jpg.asset.json";
 import outreach from "@/assets/ministry-outreach.jpg";
 import baptism from "@/assets/ministry-baptism.jpg";
 
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/ministries")({
 
 const ministries = [
   { icon: Baby, title: "Forward Kids", body: "Sunday environments built for kids birth–5th grade.", img: kidsAsset.url },
-  { icon: Mic2, title: "Forward Youth", body: "Middle & high schoolers growing in faith and friendship.", img: youth },
+  { icon: Mic2, title: "Forward Youth", body: "Middle & high schoolers growing in faith and friendship.", img: youthAsset.url },
   { icon: Coffee, title: "Young Adults", body: "Community for 18–29s navigating life with purpose." },
   { icon: HandHeart, title: "Men of Forward", body: "Brotherhood, breakfast, and biblical formation." },
   { icon: Sparkles, title: "Women of Forward", body: "Studies, retreats, and real friendships." },

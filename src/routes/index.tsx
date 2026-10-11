@@ -34,7 +34,7 @@ import heroVideo4 from "@/assets/hero-user-4.mp4.asset.json";
 import bishopWelcome from "@/assets/bishop-welcome.jpg.asset.json";
 import community from "@/assets/community-fellowship.jpg";
 import kidsAsset from "@/assets/ministry-kids.jpg.asset.json";
-import youth from "@/assets/ministry-youth.jpg";
+import youthAsset from "@/assets/ministry-youth.jpg.asset.json";
 import baptism from "@/assets/ministry-baptism.jpg";
 import outreach from "@/assets/ministry-outreach.jpg";
 import sermonStage from "@/assets/sermon-stage.jpg";
@@ -329,7 +329,7 @@ const ministries = [
   { icon: Users, title: "Small Groups", body: "Mid-week circles where faith becomes family." },
 ];
 
-const ministryImages = [kidsAsset.url, youth, baptism, outreach];
+const ministryImages = [kidsAsset.url, youthAsset.url, baptism, outreach];
 
 function MinistriesGrid() {
   return (
