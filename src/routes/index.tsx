@@ -398,7 +398,7 @@ function MinistriesGrid() {
 function PlanYourVisit() {
   return (
     <section className="section bg-[color:var(--brand-soft)]">
-      <div className="container-page max-w-3xl">
+      <div className="container-page mx-auto max-w-3xl">
         <Reveal>
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[color:var(--brand)]">
             <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--brand-accent)]" /> Plan Your Visit
