@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 const items = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/im-new", label: "I'm New" },
   { to: "/ministries", label: "Ministries" },
   { to: "/give", label: "Give" },
   { to: "/contact", label: "Contact" },

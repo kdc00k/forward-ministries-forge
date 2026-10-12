@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PlanAVisitRouteImport } from './routes/plan-a-visit'
 import { Route as MinistriesRouteImport } from './routes/ministries'
-import { Route as ImNewRouteImport } from './routes/im-new'
 import { Route as GiveRouteImport } from './routes/give'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
@@ -25,11 +24,6 @@ const PlanAVisitRoute = PlanAVisitRouteImport.update({
 const MinistriesRoute = MinistriesRouteImport.update({
   id: '/ministries',
   path: '/ministries',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ImNewRoute = ImNewRouteImport.update({
-  id: '/im-new',
-  path: '/im-new',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GiveRoute = GiveRouteImport.update({
@@ -58,7 +52,6 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/give': typeof GiveRoute
-  '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
   '/plan-a-visit': typeof PlanAVisitRoute
 }
@@ -67,7 +60,6 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/give': typeof GiveRoute
-  '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
   '/plan-a-visit': typeof PlanAVisitRoute
 }
@@ -77,7 +69,6 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/give': typeof GiveRoute
-  '/im-new': typeof ImNewRoute
   '/ministries': typeof MinistriesRoute
   '/plan-a-visit': typeof PlanAVisitRoute
 }
@@ -88,25 +79,16 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/give'
-    | '/im-new'
     | '/ministries'
     | '/plan-a-visit'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/give'
-    | '/im-new'
-    | '/ministries'
-    | '/plan-a-visit'
+  to: '/' | '/about' | '/contact' | '/give' | '/ministries' | '/plan-a-visit'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/contact'
     | '/give'
-    | '/im-new'
     | '/ministries'
     | '/plan-a-visit'
   fileRoutesById: FileRoutesById
@@ -116,7 +98,6 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   GiveRoute: typeof GiveRoute
-  ImNewRoute: typeof ImNewRoute
   MinistriesRoute: typeof MinistriesRoute
   PlanAVisitRoute: typeof PlanAVisitRoute
 }
@@ -135,13 +116,6 @@ declare module '@tanstack/react-router' {
       path: '/ministries'
       fullPath: '/ministries'
       preLoaderRoute: typeof MinistriesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/im-new': {
-      id: '/im-new'
-      path: '/im-new'
-      fullPath: '/im-new'
-      preLoaderRoute: typeof ImNewRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/give': {
@@ -180,7 +154,6 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   GiveRoute: GiveRoute,
-  ImNewRoute: ImNewRoute,
   MinistriesRoute: MinistriesRoute,
   PlanAVisitRoute: PlanAVisitRoute,
 }

@@ -234,9 +234,6 @@ function Welcome() {
               <Button asChild className="rounded-full h-12 px-6 bg-[color:var(--brand)] hover:bg-[color:var(--brand-dark)] font-bold">
                 <Link to="/about">Our Story <ArrowRight className="ml-1 h-4 w-4" /></Link>
               </Button>
-              <Button asChild variant="outline" className="rounded-full h-12 px-6 border-[color:var(--brand)]/30 text-[color:var(--brand)] hover:bg-[color:var(--brand-soft)] font-bold">
-                <Link to="/im-new">I'm New Here</Link>
-              </Button>
             </div>
           </Reveal>
         </div>
