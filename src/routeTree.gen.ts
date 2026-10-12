@@ -9,31 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as PlanAVisitRouteImport } from './routes/plan-a-visit'
-import { Route as MinistriesRouteImport } from './routes/ministries'
-import { Route as GiveRouteImport } from './routes/give'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GiveRouteImport } from './routes/give'
+import { Route as MinistriesRouteImport } from './routes/ministries'
+import { Route as PlanAVisitRouteImport } from './routes/plan-a-visit'
 
-const PlanAVisitRoute = PlanAVisitRouteImport.update({
-  id: '/plan-a-visit',
-  path: '/plan-a-visit',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MinistriesRoute = MinistriesRouteImport.update({
-  id: '/ministries',
-  path: '/ministries',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GiveRoute = GiveRouteImport.update({
-  id: '/give',
-  path: '/give',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -41,9 +26,24 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GiveRoute = GiveRouteImport.update({
+  id: '/give',
+  path: '/give',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MinistriesRoute = MinistriesRouteImport.update({
+  id: '/ministries',
+  path: '/ministries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlanAVisitRoute = PlanAVisitRouteImport.update({
+  id: '/plan-a-visit',
+  path: '/plan-a-visit',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -75,12 +75,7 @@ export interface FileRoutesById {
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/give'
-    | '/ministries'
-    | '/plan-a-visit'
+    '/' | '/about' | '/contact' | '/give' | '/ministries' | '/plan-a-visit'
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/about' | '/contact' | '/give' | '/ministries' | '/plan-a-visit'
   id:
@@ -104,32 +99,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/plan-a-visit': {
-      id: '/plan-a-visit'
-      path: '/plan-a-visit'
-      fullPath: '/plan-a-visit'
-      preLoaderRoute: typeof PlanAVisitRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ministries': {
-      id: '/ministries'
-      path: '/ministries'
-      fullPath: '/ministries'
-      preLoaderRoute: typeof MinistriesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/give': {
-      id: '/give'
-      path: '/give'
-      fullPath: '/give'
-      preLoaderRoute: typeof GiveRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -139,11 +113,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/give': {
+      id: '/give'
+      path: '/give'
+      fullPath: '/give'
+      preLoaderRoute: typeof GiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ministries': {
+      id: '/ministries'
+      path: '/ministries'
+      fullPath: '/ministries'
+      preLoaderRoute: typeof MinistriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plan-a-visit': {
+      id: '/plan-a-visit'
+      path: '/plan-a-visit'
+      fullPath: '/plan-a-visit'
+      preLoaderRoute: typeof PlanAVisitRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
