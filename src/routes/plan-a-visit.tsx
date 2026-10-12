@@ -33,7 +33,7 @@ function PlanVisit() {
       />
 
       <section className="section bg-white">
-        <div className="container-page grid lg:grid-cols-[1.1fr_1fr] gap-12">
+        <div className="container-page max-w-3xl mx-auto">
           <Reveal>
             <form
               onSubmit={(e) => {
