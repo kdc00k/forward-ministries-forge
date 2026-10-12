@@ -33,6 +33,10 @@ import bishopWelcome from "@/assets/bishop-welcome.jpg.asset.json";
 import community from "@/assets/community-fellowship.jpg";
 import kidsAsset from "@/assets/ministry-kids.jpg.asset.json";
 import youthAsset from "@/assets/ministry-youth.jpg.asset.json";
+import youngAdultsAsset from "@/assets/ministry-young-adults.jpg.asset.json";
+import menAsset from "@/assets/ministry-men.jpg.asset.json";
+import womenAsset from "@/assets/ministry-women.jpg.asset.json";
+import worshipAsset from "@/assets/ministry-worship.jpg.asset.json";
 import sermonStage from "@/assets/sermon-stage.jpg";
 
 export const Route = createFileRoute("/")({
@@ -47,6 +51,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Forward Church Ministries — Mobile, AL" },
       { property: "og:description", content: "FORWARD STARTS HERE. Join us in Mobile, Alabama." },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
@@ -321,7 +327,14 @@ const ministries = [
   { icon: Music, title: "Worship Ministry", body: "Singers, musicians, and creatives leading our gatherings." },
 ];
 
-const ministryImages = [kidsAsset.url, youthAsset.url];
+const ministryImages = [
+  { src: kidsAsset.url, pos: "center" },
+  { src: youthAsset.url, pos: "center" },
+  { src: youngAdultsAsset.url, pos: "center 16%" },
+  { src: menAsset.url, pos: "center 33%" },
+  { src: womenAsset.url, pos: "center 58%" },
+  { src: worshipAsset.url, pos: "center 40%" },
+];
 
 function MinistriesGrid() {
   return (
@@ -341,7 +354,8 @@ function MinistriesGrid() {
                   {hasImage ? (
                     <div className="aspect-[4/3] overflow-hidden">
                       <img
-                        src={ministryImages[i]}
+                        src={ministryImages[i]?.src}
+                        style={{ objectPosition: ministryImages[i]?.pos }}
                         alt={m.title}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                         loading="lazy"
