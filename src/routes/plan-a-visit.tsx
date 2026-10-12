@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
-import { ArrowRight, MapPin, Clock, Car, Baby, Coffee } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/plan-a-visit")({
@@ -23,14 +23,6 @@ export const Route = createFileRoute("/plan-a-visit")({
   component: PlanVisit,
 });
 
-const benefits = [
-  { icon: MapPin, label: "Reserved parking spot" },
-  { icon: Coffee, label: "Coffee on us at the café" },
-  { icon: Baby, label: "Kids check-in walk-through" },
-  { icon: Clock, label: "Tour before the service" },
-  { icon: Car, label: "Greeter waiting at the door" },
-];
-
 function PlanVisit() {
   return (
     <>
@@ -41,7 +33,7 @@ function PlanVisit() {
       />
 
       <section className="section bg-white">
-        <div className="container-page grid lg:grid-cols-[1.1fr_1fr] gap-12">
+        <div className="container-page max-w-3xl mx-auto">
           <Reveal>
             <form
               onSubmit={(e) => {
@@ -89,27 +81,6 @@ function PlanVisit() {
                 I'll Be There <ArrowRight className="ml-1 h-5 w-5" />
               </Button>
             </form>
-          </Reveal>
-
-          <Reveal delay={0.05}>
-            <div className="rounded-3xl bg-[color:var(--brand-dark)] text-white p-8 md:p-10">
-              <h3 className="!text-white text-2xl md:text-3xl font-display font-extrabold">What you can expect</h3>
-              <p className="mt-3 text-white/75">When you let us know you're coming, we'll have all this ready:</p>
-              <ul className="mt-6 space-y-3">
-                {benefits.map((b) => (
-                  <li key={b.label} className="flex items-center gap-3 text-white/90">
-                    <span className="h-10 w-10 grid place-items-center rounded-lg bg-white/10 text-[color:var(--brand-accent)]">
-                      <b.icon className="h-5 w-5" />
-                    </span>
-                    {b.label}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/80">
-                <p><strong className="text-white">Sundays</strong> · 11:00 AM</p>
-                <p className="mt-1"><strong className="text-white">Address</strong> · 8930 CR-36, Mobile, AL 36695</p>
-              </div>
-            </div>
           </Reveal>
         </div>
       </section>
