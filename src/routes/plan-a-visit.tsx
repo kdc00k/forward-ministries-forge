@@ -23,14 +23,6 @@ export const Route = createFileRoute("/plan-a-visit")({
   component: PlanVisit,
 });
 
-const benefits = [
-  { icon: MapPin, label: "Reserved parking spot" },
-  { icon: Coffee, label: "Coffee on us at the café" },
-  { icon: Baby, label: "Kids check-in walk-through" },
-  { icon: Clock, label: "Tour before the service" },
-  { icon: Car, label: "Greeter waiting at the door" },
-];
-
 function PlanVisit() {
   return (
     <>
