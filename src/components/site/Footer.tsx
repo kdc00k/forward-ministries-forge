@@ -31,7 +31,6 @@ export function Footer() {
           <h4 className="text-white text-sm font-bold uppercase tracking-wider mb-5">Explore</h4>
           <ul className="space-y-3 text-sm text-white/75">
             <li><Link to="/about" className="hover:text-[color:var(--brand-accent)]">About</Link></li>
-            <li><Link to="/im-new" className="hover:text-[color:var(--brand-accent)]">I'm New</Link></li>
             <li><Link to="/ministries" className="hover:text-[color:var(--brand-accent)]">Ministries</Link></li>
             <li><Link to="/give" className="hover:text-[color:var(--brand-accent)]">Give</Link></li>
           </ul>
